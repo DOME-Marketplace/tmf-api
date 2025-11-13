@@ -8,7 +8,9 @@
     "relatedParty": {
         "type": "array",
         "description": "List of related parties",
-        "$ref": "../schemas/EngagedParty/RelatedParty.schema.json#RelatedParty"
+        "items": {
+            "$ref": "../schemas/EngagedParty/RelatedParty.schema.json#RelatedParty"
+        }
     }
   }
 }
