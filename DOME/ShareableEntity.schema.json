@@ -2,9 +2,14 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "#ShareableEntity",
   "title": "ShareableEntity",
-  "description": "DOME extensions for TMForum entities that needs to be shared across access nodes",
+  "description": "DOME extensions for TMForum entities that needs to be shared across Access Nodes",
   "type": "object",
   "properties": {
+    "lastUpdate": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time of the last update"
+    },
     "relatedParty": {
         "type": "array",
         "description": "List of related parties",
