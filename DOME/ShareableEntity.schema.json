@@ -4,6 +4,7 @@
   "title": "ShareableEntity",
   "description": "DOME extensions for TMForum entities that needs to be shared across Access Nodes",
   "type": "object",
+  "required": [ "relatedParty" ],
   "properties": {
     "lastUpdate": {
         "type": "string",
