@@ -6,11 +6,6 @@
   "type": "object",
   "required": [ "relatedParty" ],
   "properties": {
-    "lastUpdate": {
-        "type": "string",
-        "format": "date-time",
-        "description": "Date and time of the last update"
-    },
     "relatedParty": {
         "type": "array",
         "description": "List of related parties",
