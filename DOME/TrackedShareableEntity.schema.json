@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "#TrackedShareableEntity",
+    "title": "TrackedShareableEntity",
+    "description": "DOME extensions for TMForum entities that needs to be shared across Access Nodes",
+    "allOf": [
+        {
+            "$ref": "./TrackedEntity.schema.json"
+        },
+        {
+            "$ref": "./ShareableEntity.schema.json"
+        }
+    ]
+}
