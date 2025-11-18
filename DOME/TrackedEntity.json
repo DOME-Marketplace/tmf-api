@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#TrackedEntity",
+  "title": "TrackedEntity",
+  "description": "DOME extensions for TMForum entities require a lastUpdate field",
+  "type": "object",
+  "required": [ "lastUpdate" ],
+  "properties": {
+    "lastUpdate": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time of the last update"
+    }
+  }
+}
