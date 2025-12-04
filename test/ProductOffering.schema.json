@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "#ProductOfferingExtension",
+    "title": "ProductOffering",
+    "description": "DOME extensions for TMForum Product Offering",
+    "type": "object",
+    "properties": {
+        "lastUpdate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time of the last update"
+        },
+        "relatedParty": {
+            "type": "array",
+            "description": "The PricingLogicAlgorithm entity represents an instantiation of an interface specification to external rating function (without a modeled behavior in SID). Some of the parameters of the interface definition may be already set (such as price per unit) and some may be gathered during the rating process from the event (such as call duration) or from ProductCharacteristicValues (such as assigned bandwidth).",
+            "items": {
+                "$ref": "../schemas/Product/PricingLogicAlgorithm.schema.json#PricingLogicAlgorithm"
+            }
+        }
+    }
+}
