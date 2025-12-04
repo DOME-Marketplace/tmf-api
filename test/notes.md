@@ -11,6 +11,7 @@ Tests using the *TrackedShareableEntity.schema.json*, which includes other depen
     - a `GET` call to get **ALL** applied (list): `java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at path $.relatedParty`
     - a `GET` call to get by **ID** the apply: `OK` (with `2 relatedParty`)
 <br>
+
 - **Use Case 2** - Test creation AppliedCustomerBillingRate with 1 `relatedParty`
    - a `POST` call to create an applied: `OK`
    - a `GET` call to get **ALL** applied (list): `java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at path $.relatedParty`
@@ -25,6 +26,7 @@ Tests using the *AppliedCustomerBillingRate.schema.json*, which includes attribu
     - a `GET` call to get **ALL** applied (list): `OK` *(but only one relatedParty)*
     - a `GET` call to get by **ID** the apply: `OK` *(with 2 relatedParty)*
 <br>
+
 - **Use Case 2** - Test creation AppliedCustomerBillingRate with 1 `relatedParty`
    - a `POST` call to create an applied: `OK`
    - a `GET` call to get **ALL** applied (list): `OK` *(1 relatedParty)*
