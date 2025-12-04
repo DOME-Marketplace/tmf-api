@@ -3,12 +3,18 @@
     "$id": "#TrackedShareableEntity",
     "title": "TrackedShareableEntity",
     "description": "DOME extensions for TMForum entities that needs to be shared across Access Nodes",
-    "allOf": [
-        {
-            "$ref": "./TrackedEntity.schema.json"
+    "properties": {
+        "lastUpdate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time of the last update"
         },
-        {
-            "$ref": "./ShareableEntity.schema.json"
+        "relatedParty": {
+            "type": "array",
+            "description": "List of related parties",
+            "items": {
+                "$ref": "../schemas/EngagedParty/RelatedParty.schema.json#RelatedParty"
+            }
         }
-    ]
+    }
 }
