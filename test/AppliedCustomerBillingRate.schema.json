@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "#AppliedCustomerBillingRateExtension",
+    "title": "AppliedCustomerBillingRate",
+    "description": "DOME extensions for TMForum Applied Customer Bill Rate",
+    "type": "object",
+    "properties": {
+        "lastUpdate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time of the last update"
+        },
+        "relatedParty": {
+            "type": "array",
+            "description": "List of related parties",
+            "items": {
+                "$ref": "../schemas/EngagedParty/RelatedParty.schema.json#RelatedParty"
+            }
+        }
+    }
+}
