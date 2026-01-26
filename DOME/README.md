@@ -2,7 +2,7 @@
 
 Here is the list of schemas to use, based on the custom attributes you need in the Entity.
 
-|    |    Schema              |     Atrtibutes                         |
+|    |    Schema              |     Attributes                         |
 |:--:|------------------------|----------------------------------------|
 | 1  | ExternallyBilled       | relatedParty + pricingLogicalAlgorithm | 
 | 2  | ShareableEntity        | relatedParty                           |
