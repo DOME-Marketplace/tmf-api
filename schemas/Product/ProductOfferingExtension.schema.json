@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#ProductOfferingExtension",
+  "title": "ProductOfferingExtension",
+  "description": "DOME extensions for TMForum Product Offering",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/DOME-Marketplace/tmf-api/refs/heads/main/DOME/ShareableEntity.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "cloudesireProductVersionId": {
+          "type": "number",
+          "description": "CloudeSire product version identifier"
+        },
+        "pricingLogicAlgorithm": {
+          "$ref": "https://raw.githubusercontent.com/DOME-Marketplace/tmf-api/refs/heads/main/schemas/Product/PricingLogicAlgorithm.schema.json"
+        }
+      }
+    }
+  ]
+}

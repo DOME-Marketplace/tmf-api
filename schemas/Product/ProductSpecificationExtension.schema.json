@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#ProductSpecificationExtension",
+  "title": "ProductSpecificationExtension",
+  "description": "DOME extensions for TMForum Product Specification",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/DOME-Marketplace/tmf-api/refs/heads/main/DOME/ShareableEntity.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "cloudesireProductVersionId": {
+          "type": "number",
+          "description": "CloudeSire product version identifier"
+        },
+        "productSpecCharacteristic_ext": {
+          "type": "array",
+          "description": "Extended characteristics with Cloudesire metadata",
+          "items": {
+            "$ref": "#/definitions/ProductSpecCharacteristicExtension"
+          }
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "ProductSpecCharacteristicExtension": {
+      "type": "object",
+      "description": "Extended ProductSpecCharacteristic with Cloudesire metadata",
+      "properties": {
+        "cloudesireBillingItemId": {
+          "type": "string",
+          "description": "Cloudesire billing item identifier (format: billingItem/{id})"
+        },
+        "cloudesireConfigurationParameterId": {
+          "type": "string",
+          "description": "Cloudesire configuration parameter identifier (format: configurationParameter/{id})"
+        },
+        "productSpecCharacteristicValue": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductSpecCharacteristicValueExtension"
+          }
+        }
+      }
+    },
+    "ProductSpecCharacteristicValueExtension": {
+      "type": "object",
+      "description": "Extended ProductSpecCharacteristicValue with Cloudesire metadata",
+      "properties": {
+        "cloudesireBillingItemValueId": {
+          "type": "string",
+          "description": "Cloudesire billing item value identifier (format: billingItemValue/{id})"
+        }
+      }
+    }
+  }
+}
