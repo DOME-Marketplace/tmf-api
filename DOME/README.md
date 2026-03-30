@@ -8,6 +8,7 @@ Here is the list of schemas to use, based on the custom attributes you need in t
 | 2  | ShareableEntity        | relatedParty                           |
 | 3  | TrackedEntity          | lastUpdate                             |
 | 4  | TrackedShareableEntity | relatedParty + lastUpdate              |
+| 5  | PriceComponent         | relatedParty + usageSpecId             |
 
 Please use the **raw data schema.json**, e.g. for relatedParty set as schema: https://raw.githubusercontent.com/DOME-Marketplace/tmf-api/refs/heads/main/DOME/ShareableEntity.schema.json.
 

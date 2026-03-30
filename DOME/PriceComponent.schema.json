@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "priceComponentExtension",
+    "title": "priceComponentExtension",
+    "description": "An identifier for the usage specification and related party for product offering price",
+    "type": "object",
+    "required": [ "relatedParty" ],
+    "properties": {
+        "usageSpecId": {
+            "type": "string",
+            "description": "An identifier for the usage specification."
+        },
+        "relatedParty": {
+            "type": "array",
+            "description": "List of related parties",
+            "items": {
+                "$ref": "../schemas/EngagedParty/RelatedParty.schema.json#RelatedParty"
+            }
+        }
+    },
+    "additionalProperties": false
+}
