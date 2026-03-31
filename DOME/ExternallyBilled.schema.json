@@ -4,7 +4,6 @@
   "title": "ExternallyBilled",
   "description": "DOME extensions for TMForum Product Offerings that are billed through a third party billing engine",
   "type": "object",  
-  "required": [ "relatedParty" ],
   "properties": {
     "pricingLogicAlgorithm": {
       "type": "array",
