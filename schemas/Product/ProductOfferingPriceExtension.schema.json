@@ -17,6 +17,10 @@
         "cloudesireResellerCatalogId": {
           "type": "string",
           "description": "CloudeSire reseller catalog identifier"
+        },
+        "cloudesireComponentKey": {
+          "type": "string",
+          "description": "Stable Cloudesire-derived component identity used to match ProductOfferingPrice components across sync runs"
         }
       }
     }
