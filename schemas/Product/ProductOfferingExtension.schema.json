@@ -3,21 +3,22 @@
   "$id": "#ProductOfferingExtension",
   "title": "ProductOfferingExtension",
   "description": "DOME extensions for TMForum Product Offering",
+  "type": "object",
   "allOf": [
     {
       "$ref": "https://raw.githubusercontent.com/DOME-Marketplace/tmf-api/refs/heads/main/DOME/ShareableEntity.schema.json"
+    }
+  ],
+  "properties": {
+    "cloudesireProductVersionId": {
+      "type": "number",
+      "description": "CloudeSire product version identifier"
     },
-    {
-      "type": "object",
-      "properties": {
-        "cloudesireProductVersionId": {
-          "type": "number",
-          "description": "CloudeSire product version identifier"
-        },
-        "pricingLogicAlgorithm": {
-          "$ref": "https://raw.githubusercontent.com/DOME-Marketplace/tmf-api/refs/heads/main/schemas/Product/PricingLogicAlgorithm.schema.json"
-        }
+    "pricingLogicAlgorithm": {
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/DOME-Marketplace/tmf-api/refs/heads/main/schemas/Product/PricingLogicAlgorithm.schema.json#PricingLogicAlgorithm"
       }
     }
-  ]
+  }
 }
