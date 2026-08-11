@@ -4,8 +4,56 @@
   "title": "ProductSpecificationExtension",
   "type": "object",
   "properties": {
-    "cloudesireProductVersionId": {
-      "type": "number"
+    "externalId": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "ProductSpecCharacteristicExtension": {
+      "type": "object",
+      "properties": {
+        "externalId": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "ProductSpecCharacteristicValueExtension": {
+      "type": "object",
+      "properties": {
+        "externalId": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        }
+      }
     }
   }
 }
