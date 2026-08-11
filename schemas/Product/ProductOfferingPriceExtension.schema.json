@@ -10,17 +10,19 @@
     {
       "type": "object",
       "properties": {
-        "cloudesireProductVersionId": {
-          "type": "number",
-          "description": "CloudeSire product version identifier"
-        },
-        "cloudesireResellerCatalogId": {
-          "type": "string",
-          "description": "CloudeSire reseller catalog identifier"
-        },
-        "cloudesireComponentKey": {
-          "type": "string",
-          "description": "Stable Cloudesire-derived component identity used to match ProductOfferingPrice components across sync runs"
+        "externalId": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ],
+          "description": "Neutral external identifiers"
         }
       }
     }
