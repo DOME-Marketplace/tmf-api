@@ -3,7 +3,7 @@
   "$id": "#ExternallyBilled",
   "title": "ExternallyBilled",
   "description": "DOME extensions for TMForum Product Offerings that are billed through a third party billing engine",
-  "type": "object",  
+  "type": "object",
   "properties": {
     "pricingLogicAlgorithm": {
       "type": "array",
@@ -18,6 +18,11 @@
       "items": {
         "$ref": "../schemas/EngagedParty/RelatedParty.schema.json#RelatedParty"
       }
+    },
+    "lastUpdate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of the last update"
     }
   },
   "additionalProperties": false
