@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#PricePlan",
+  "title": "PricePlan",
+  "description": "DOME extensions for TMForum Product Offering Prices used as price plans",
+  "type": "object",
+  "properties": {
+    "forbiddenCharacteristic": {
+      "type": "array",
+      "description": "Product specification characteristics that cannot be used by the price components of this price plan",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
