@@ -15,11 +15,6 @@
             "items": {
                 "$ref": "../schemas/EngagedParty/RelatedParty.schema.json#RelatedParty"
             }
-        },
-        "lastUpdate": {
-            "type": "string",
-            "format": "date-time",
-            "description": "Date and time of the last update"
         }
     },
     "additionalProperties": false
